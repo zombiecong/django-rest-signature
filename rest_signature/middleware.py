@@ -10,9 +10,10 @@ AUTH_USER_MODEL = getattr(settings, 'AUTH_USER_MODEL', 'auth.User')
 class SignatureMiddleware(object):
     def process_request(self, request):
         sb = 'http://learning-tech.com/'
-        calladmin = '找管理员'
+        unknown = 'unknown error'
+
         response = http.HttpResponse(sb)
-        response_admin= http.HttpResponse(calladmin)
+        response_admin= http.HttpResponse(unknown)
 
         if request.method in ('POST','DELETE','PATCH',):
             print('Post')
