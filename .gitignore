@@ -1,12 +1,15 @@
 mysite
 templates
 v1
+package
 
 mysite/*
 templates/*
 v1/*
+package/*
 
 db.sqlite3
 manage.py
 
 .idea
+
